@@ -37,7 +37,7 @@ public class HlavniProgram {
 
 */
 
-        nakresliPrasatko(zofka);
+       nakresliPrasatko(zofka);
 
         zofka.penUp();
         zofka.turnRight(60);
@@ -86,7 +86,100 @@ public class HlavniProgram {
 
         nakresliSlunce(zofka);
 
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(400);
+        zofka.turnRight(90);
+        zofka.move(65);
+        zofka.turnRight(90);
+        zofka.penDown();
 
+       pismenoA(zofka);
+
+       pismenoD(zofka);
+
+       pismenoE(zofka);
+
+       pismenoL(zofka);
+
+       pismenoA(zofka);
+
+    }
+
+    private static void pismenoL(Turtle zofka) {
+        zofka.move(80);
+        zofka.turnLeft(180);
+        zofka.move(80);
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.penDown();
+    }
+
+    private static void pismenoE(Turtle zofka) {
+        zofka.move(80);
+        zofka.turnRight(90);
+        zofka.move(40);
+        zofka.turnLeft(180);
+        zofka.move (40);
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(180);
+        zofka.move (40);
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.penDown();
+    }
+
+    private static void pismenoD(Turtle zofka) {
+        zofka.move(80);
+        zofka.turnRight(90);
+
+        for (int i = 0; i < 180; i++) {
+            zofka.move(0.7);
+            zofka.turnRight(1);
+        }
+        zofka.turnRight(180);
+        zofka.penUp();
+        zofka.move(40);
+        zofka.turnLeft(90);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.penDown();
+    }
+
+    private static void pismenoA(Turtle zofka) {
+        zofka.turnRight(20);
+        zofka.move(80);
+        zofka.turnRight(140);
+        zofka.move (40);
+        zofka.turnRight(110);
+        zofka.move(25);
+        zofka.turnRight(180);
+        zofka.move(25);
+        zofka.turnRight(70);
+        zofka.move(40);
+        zofka.penUp();
+        zofka.turnLeft(160);
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.penDown();
     }
 
     private static void nakresliDomecek(Turtle zofka) {
